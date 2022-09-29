@@ -5,13 +5,19 @@ plugins {
 }
 
 group = 'com.pabi'
-version = '0.0.1-SNAPSHOT'
+version = ''
 sourceCompatibility = '17'
+
+archivesBaseName = 'pabi-eureka'
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+}
+
+bootJar {
+    archiveFileName = "pabi-eureka.jar"
 }
 
 repositories {

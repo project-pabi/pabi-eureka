@@ -1,12 +1,14 @@
 server:
-  port: 8761
+  port: ${PORT:8000}
   shutdown: graceful
 
 spring:
   application:
-    name: discoverservice
+    name: ${EUREKA_SERVER_NAME:pabi-eureka}
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://${EUREKA_SERVER_NAME:pabi-eureka}:${PORT:8000}/eureka
