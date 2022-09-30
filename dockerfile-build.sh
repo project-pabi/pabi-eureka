@@ -1,1 +1,1 @@
-docker build --tag pabi-eureka --build-arg PATH=./ .
+docker build --tag pabi-eureka --build-arg JAR_PATH=./ .
