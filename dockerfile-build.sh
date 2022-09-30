@@ -1,1 +1,1 @@
-docker build --tag pabi-eureka .
+docker build --tag pabi-eureka --build-arg PATH=./ .
